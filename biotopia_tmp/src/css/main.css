@@ -421,9 +421,13 @@ footer .section {
   flex-direction: column;
   padding: 40px 60px;
   gap: var(--gap--large);
+
   border-radius: var(--radius--medium);
-  background: var(--functionnal-color--950);
   color: var(--neutral-color--white);
+
+  background: var(--background-color-card-blur);
+  backdrop-filter: var(--backdrop-filter-card-blur);
+  border: var(--border-card-blur);
 }
 
 .swiper-slide {
@@ -451,7 +455,10 @@ footer .section {
   gap: var(--gap--xlarge);
 
   color: var(--neutral-color--white);
-  background: var(--neutral-color---black);
+
+  background: var(--background-color-card-blur);
+  backdrop-filter: var(--backdrop-filter-card-blur);
+  border: var(--border-card-blur);
 }
 
 .section-final .container-row.content {
