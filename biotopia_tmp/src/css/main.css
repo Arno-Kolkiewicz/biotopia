@@ -180,10 +180,6 @@ footer {
   position: relative;
 }
 
-.section {
-  margin: auto;
-}
-
 .button {
   display: inline-flex;
   padding: 1vh 3vw;
@@ -198,6 +194,7 @@ footer {
   border: var(--border-card-blur);
 
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .button:hover {
@@ -239,7 +236,53 @@ input:focus-visible {
 }
 
 .section {
-  padding: 40px;
+  padding: 4% 0;
+  margin: auto;
+}
+
+.section-intro {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.section-intro.left {
+  align-items: flex-start;
+}
+
+.section-intro.right {
+  align-items: flex-end;
+}
+
+.section-intro.center {
+  align-items: center;
+}
+
+.section-intro div {
+   width: 50%;
+}
+
+.section-intro p {
+}
+
+.section-intro .align-center {
+  align-self: center;
+}
+
+.section-intro .align-right {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-intro .align-right > * {
+  display: inline;
+}
+
+.section-intro img {
+  width: 25%;
+  margin: 10%;
 }
 
 .container-row {
@@ -283,6 +326,23 @@ input:focus-visible {
   background: var(--background-color-card-blur);
   backdrop-filter: var(--backdrop-filter-card-blur);
   border: var(--border-card-blur);
+}
+
+.mini-card.card-img {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-card.card-img p,
+.mini-card.card-img h3 {
+  display: none;
+}
+
+.mini-card.card-img img {
+  position: relative;
+  width: 40%;
 }
 
 .mini-card .opinion {
@@ -341,9 +401,11 @@ input:focus-visible {
   border: var(--border-card-blur);
 }
 
-.container-blog {
+.section-blog {
   display: flex;
   flex-direction: row;
+
+
 }
 
 .nav-slider {
@@ -351,7 +413,6 @@ input:focus-visible {
   display: flex;
   gap: var(--gap--small);
 }
-
 
 .nav-slider .point {
   width: 10px;
@@ -384,7 +445,6 @@ input:focus-visible {
 .calculator h2 {
   color: var(--neutral-color--white);
 }
-
 
 .card-feature {
   padding: 30px;
@@ -441,8 +501,12 @@ footer .section {
   text-align: start!important;
 }
 
+.swiper-pagination-bullet {
+  background: var(--neutral-color--white)!important;
+}
+
 .swiper-pagination-bullet-active {
-  background: var(--functionnal-color--950)!important;
+  background: var(--neutral-color--white)!important;
   width: 15px!important;
   border-radius: var(--radius--full)!important;
 }
