@@ -259,11 +259,13 @@ input:focus-visible {
   align-items: center;
 }
 
-.section-intro div {
+.section-intro .container {
    width: 50%;
 }
 
-.section-intro p {
+.section-intro p,
+.section-intro h2 {
+  margin-bottom: 5%;
 }
 
 .section-intro .align-center {
