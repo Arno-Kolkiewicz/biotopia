@@ -2,6 +2,7 @@ import './app.js';  // Importation du fichier particles.js JS
 import './calculateur.js'; // Importation du fichier calculateur.js JS
 import './newsletter.js'; // Importation du fichier newsletter.js JS
 
+
 document.addEventListener('DOMContentLoaded', function() {
 
   var swiper = new Swiper(".mySwiper", {
