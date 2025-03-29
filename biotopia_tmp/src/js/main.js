@@ -33,7 +33,20 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
-  
+
+  const burgerMenu = document.querySelectorAll('.burger-menu');
+  burgerMenu.forEach(menu => {
+      menu.addEventListener('click', function() {
+          // Toggle the menu visibility
+          toggleMenu();
+      });
+  });
+
+  function toggleMenu() {
+    var menu = document.getElementById('navMenu');
+    menu.classList.toggle('show');
+  }
+
 
 
 });
