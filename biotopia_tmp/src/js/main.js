@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const targetId = button.getAttribute('data-target');
           const targetContent = document.getElementById(targetId);
           if (targetContent) {
-              targetContent.style.display = 'block';
+              targetContent.style.display = 'flex';
           }
       });
   });
